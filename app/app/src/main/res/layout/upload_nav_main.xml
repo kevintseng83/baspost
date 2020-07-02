@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_upload_video" />
+
+
+    <com.andremion.floatingnavigationview.FloatingNavigationView
+        android:id="@+id/floating_navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#055286"
+        android:layout_margin="@dimen/fab_margin"
+        app:drawMenuBelowFab="false"
+        app:headerLayout="@layout/navigation_view_header"
+
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="right|end"
+        app:menu="@menu/navigation_view" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
